@@ -44,6 +44,7 @@ L.Handler.AlmostOver = L.Handler.extend({
     addHooks: function () {
         if (this._map.options.almostOnMouseMove) {
             this._map.on('mousemove', this.__mouseMoveSampling, this);
+            this._map.on('mouseout', this._onMouseMove, this);
             this._map.on('mousemovesample', this._onMouseMove, this);
         }
         this._map.on('click dblclick', this._onMouseClick, this);
@@ -61,6 +62,7 @@ L.Handler.AlmostOver = L.Handler.extend({
     removeHooks: function () {
         this._map.off('mousemovesample');
         this._map.off('mousemove', this.__mouseMoveSampling, this);
+        this._map.off('mouseout', this._onMouseMove, this);
         this._map.off('click dblclick', this._onMouseClick, this);
     },
 

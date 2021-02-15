@@ -19,7 +19,7 @@
         "test": "mocha-phantomjs test/index.html"
     },
     "peerDependencies": {
-        "leaflet": "0.7.x",
+        "leaflet": "1.6.x",
         "leaflet-geometryutil": "*"
     },
     "devDependencies": {

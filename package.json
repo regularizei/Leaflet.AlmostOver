@@ -1,18 +1,18 @@
 {
-    "name": "leaflet-almostover",
+    "name": "@regularizei/leaflet-almostover",
     "version": "1.0.1",
     "description": "",
+    "main": "src/leaflet.almostover.js",
     "keywords": [
         "Leaflet",
         "GIS"
     ],
-    "main": "src/leaflet.almostover.js",
     "bugs": {
         "url": "https://github.com/makinacorpus/Leaflet.AlmostOver/issues"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/makinacorpus/Leaflet.AlmostOver.git"
+        "url": "git+https://github.com/regularizei/Leaflet.AlmostOver.git"
     },
     "license": "MIT",
     "scripts": {
